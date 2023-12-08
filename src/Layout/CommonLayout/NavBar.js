@@ -12,12 +12,11 @@ import withRouter from '../../components/withRouter';
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState();
   const toggle = () => setIsOpen(!isOpen);
-const navigate = useNavigate();
+
+  const navigate = useNavigate();
   const [user]  = useAuthState(auth);
 
 if(user){
-
-  navigate('/myProfile');
 }
 
 
@@ -25,7 +24,8 @@ if(user){
     try {
       await signOut();
       if(true)
-      {alert('You are signed out');}
+      {alert('You are signed out');navigate("/");}
+      
     } catch (error) {
       console.error(error);
     }
