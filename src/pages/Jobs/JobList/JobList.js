@@ -7,7 +7,7 @@ import Popular from "./Popular";
 import Sidebar from "./Sidebar";
 
 const JobList = () => {
-  document.title = "Job List | Jobcy - Job Listing Template | Themesdesign";
+  document.title = "Job List | NextGenJob - Job Listing Template | Code Canva Team";
   return (
     <React.Fragment>
       <Section />

@@ -20,7 +20,7 @@ import Grid from "./Grid";
 import Video from "./Video";
 
 const Components = () => {
-  document.title = "Components | Jobcy - Job Listing Template | Themesdesign";
+  document.title = "Components | NextGenJob - Job Listing Template | Code Canva Team";
   return (
     <React.Fragment>
       <Section />

@@ -1,8 +1,6 @@
 import React from "react";
-
 import lightLogo from "../../assets/images/logo-light.png";
 import darkLogo from "../../assets/images/logo-dark.png";
-
 import signInImage from "../../assets/images/auth/sign-in.png";
 import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
@@ -48,7 +46,7 @@ const SignOut = () => {
                               <div className="text-center mb-4">
                                 <h5>You are Logged Out</h5>
                                 <p className="text-white-70">
-                                  Thank you for using Jobcy
+                                  Thank you for using NextGenJob
                                 </p>
                               </div>
                               <Link

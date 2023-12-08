@@ -6,7 +6,7 @@ import RightSideContent from "./RightSideContent";
 import Section from "./Section";
 
 const JobDetails = () => {
-  document.title = "Job Details | Jobcy - Job Listing Template | Themesdesign";
+  document.title = "Job Details | NextGenJob - Job Listing Template | Code Canva Team";
   return (
     <React.Fragment>
       <Section />

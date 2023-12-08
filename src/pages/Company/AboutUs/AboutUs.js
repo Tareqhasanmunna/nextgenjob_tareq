@@ -8,7 +8,7 @@ import Faqs from "../Faqs/Faqs";
 import Team from "../Team/Team";
 
 const AboutUs = () => {
-  document.title = "About Us | Jobcy - Job Listing Template | Themesdesign";
+  document.title = "About Us | NextGenJob - Job Listing Template | Code Canva Team";
   return (
     <React.Fragment>
       <Section />

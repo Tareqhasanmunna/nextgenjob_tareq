@@ -58,7 +58,7 @@ const FeaturedJobs = () => {
       id: 3,
       companyImg: jobImage3,
       jobDescription: "Digital Marketing Manager",
-      companyName: "Jobcy Technology Pvt.Ltd",
+      companyName: "NextGenJob Technology Pvt.Ltd",
       location: "Phoenix, Arizona",
       salary: "1500-2400/m",
       freelancer: true,

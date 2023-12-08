@@ -13,7 +13,7 @@ const Cta = () => {
                 See everything about your employee at one place.
               </h3>
               <p className="para-desc text-muted mx-auto">
-                Start working with Jobcy that can provide everything you need to
+                Start working with NextGenJob that can provide everything you need to
                 generate awareness, drive traffic, connect.
               </p>
               <div className="mt-4">

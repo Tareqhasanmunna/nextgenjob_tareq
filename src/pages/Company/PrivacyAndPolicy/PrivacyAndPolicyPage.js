@@ -6,12 +6,12 @@ const PrivacyAndPolicyPage = () => {
   const privacyandpolicyPage = [
     {
       id: 1,
-      policyTitle: "Use for Jobcy",
+      policyTitle: "Use for NextGenJob",
       policyRules: [
         {
           id: 1,
           policyInnerRule:
-            " At Jobcy, accessible at Website.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Jobcy and how we use If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at <b className=`text-danger`>Jobcytechnologypvt.ltd.com"
+            " At NextGenJob, accessible at Website.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by NextGenJob and how we use If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at <b className=`text-danger`>NextGenJobtechnologypvt.ltd.com"
         },
         {
           id: 2,
@@ -21,12 +21,12 @@ const PrivacyAndPolicyPage = () => {
         {
           id: 3,
           policyInnerRule:
-            " This privacy policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Jobcy. This policy is not applicable to any information collected offline or via channels other than this website."
+            " This privacy policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in NextGenJob. This policy is not applicable to any information collected offline or via channels other than this website."
         },
         {
           id: 4,
           policyInnerRule:
-            " Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity to our website with regards to the information that they shared and/or collect in Jobcy. This policy is not applicable to any information collected offline or via channels other than this website."
+            " Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity to our website with regards to the information that they shared and/or collect in NextGenJob. This policy is not applicable to any information collected offline or via channels other than this website."
         }
       ]
     },

@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 
 /* Layout */
 const CommonLayout = React.lazy(() => import('../Layout/CommonLayout/index'))
-const AuthLayout = React.lazy(() => import('../Layout/AuthLayout'))
 
 
 const Loader = () => {
@@ -33,7 +32,6 @@ const Index = () => {
           {authRoutes.map((route, idx) => (
             <Route
               path={route.path}
-              element={<AuthLayout>{route.component}</AuthLayout>}
               key={idx}
               exact={true}
             />

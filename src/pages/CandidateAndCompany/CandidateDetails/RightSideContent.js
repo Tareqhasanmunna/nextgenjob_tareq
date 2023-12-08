@@ -151,7 +151,7 @@ const RightSideContent = () => {
                 <div className="ms-4">
                   <h6 className="fs-16 mb-1">Project Manager</h6>
                   <p className="mb-2 text-muted">
-                    Jobcy Technology Pvt.Ltd - (Pressent)
+                    NextGenJob Technology Pvt.Ltd - (Pressent)
                   </p>
                   <p className="text-muted mb-0">
                     There are many variations of passages of available, but the

@@ -3,7 +3,7 @@ import Section from "../Contact/Section";
 import ContactContent from "../Contact/ContactContent";
 
 const Contact = () => {
-  document.title = "Contact | Jobcy - Job Listing Template | Themesdesign";
+  document.title = "Contact | NextGenJob - Job Listing Template | Code Canva Team";
   return (
     <React.Fragment>
       <Section />

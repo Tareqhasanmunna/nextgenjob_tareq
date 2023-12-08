@@ -17,7 +17,7 @@ const LeftSideContent = () => {
                 alt=""
                 className="avatar-lg rounded-circle"
               />
-              <h6 className="fs-18 mb-1 mt-4">Jobcy Technology Pvt.Ltd</h6>
+              <h6 className="fs-18 mb-1 mt-4">NextGenJob Technology Pvt.Ltd</h6>
               <p className="text-muted mb-4">Since July 2017</p>
               <ul className="candidate-detail-social-menu list-inline mb-0">
                 <li className="list-inline-item">
@@ -71,7 +71,7 @@ const LeftSideContent = () => {
                   <label className="text-dark">Website</label>
                   <div>
                     <p className="text-muted text-break mb-0">
-                      www.Jobcytecnologypvt.ltd.com
+                      www.NextGenJobtecnologypvt.ltd.com
                     </p>
                   </div>
                 </div>

@@ -16,10 +16,10 @@ const About = () => {
                 <h6 className="sub-title">About Us</h6>
                 <h2 className="title mb-4">
                   Why <span className="text-warning fw-bold">35,000+</span>{" "}
-                  People Trust On Jobcy?
+                  People Trust On NextGenJob?
                 </h2>
                 <p className="text-muted">
-                  Start working with Jobcy that can provide everything you need
+                  Start working with NextGenJob that can provide everything you need
                   to generate awareness, drive traffic, connect. Dummy text is
                   text that is used in the publishing industry or by web
                   designers to occupy the space which will later be filled with

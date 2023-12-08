@@ -54,7 +54,7 @@ const ComingSoon = () => {
                       </div>
                       <h1>We're Launching Soon..!!</h1>
                       <p className="text-muted mb-4 pb-3">
-                        Start working with Jobcy that can provide everything you
+                        Start working with Nextgenjob that can provide everything you
                         need to generate awareness, drive traffic, connect.
                       </p>
                       <div id="countdown" className="d-flex">

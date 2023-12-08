@@ -34,7 +34,7 @@ const JobVacancyList = () => {
       id: 2,
       companyImg: jobImage2,
       jobDescription: "Digital Marketing Manager",
-      companyName: "Jobcy Technology Pvt.Ltd",
+      companyName: "NextGenJob Technology Pvt.Ltd",
       location: "Phoenix, Arizona",
       jobPostTime: "15 min ago",
       fullTime: true,
