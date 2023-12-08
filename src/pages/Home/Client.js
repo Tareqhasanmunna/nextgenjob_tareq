@@ -53,7 +53,7 @@ const Client = () => {
                     title=""
                     data-bs-original-title="Woocommerce"
                   >
-                    <img src={item.logoImage} alt="" className="img-fluid" />
+                    <img src={item.logoImage} alt="" className="img-fluid w-50" />
                   </Link>
                 </div>
               </Col>

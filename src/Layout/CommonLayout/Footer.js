@@ -179,11 +179,11 @@ const Footer = () => {
                 {new Date().getFullYear()} &copy; NextGenJob - Job Listing Page
                 Template by{" "}
                 <Link
-                  to="//Code Canva Team.in/"
+                  to="//NextGenJob.in/"
                   target="_blank"
                   className="text-reset text-decoration-underline"
                 >
-                  Code Canva Team
+                  NextGenJob
                 </Link>
               </p>
             </Col>

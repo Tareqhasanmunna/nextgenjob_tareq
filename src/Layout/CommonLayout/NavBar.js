@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-no-undef */
 import React from 'react';
-import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Col, Row, Container, Collapse, NavbarToggler, NavItem } from "reactstrap";
 import { Link, useNavigate } from "react-router-dom";
@@ -16,15 +15,10 @@ const NavBar = () => {
   const navigate = useNavigate();
   const [user]  = useAuthState(auth);
 
-if(user){
-}
-
-
   const handleSignOut = async () => {
     try {
-      await signOut();
-      if(true)
-      {alert('You are signed out');navigate("/");}
+      await auth.signOut();
+     navigate("/");
       
     } catch (error) {
       console.error(error);
@@ -68,7 +62,7 @@ if(user){
               {user ? (
                 <div className="d-flex align-items-center">
                  
-                  <img src={user.photoURL || 'default-user-image-url'} alt={user.displayName || 'User'} className="rounded-circle me-2" style={{ height: '40px', width: '40px' }} />
+                  <img src={user.photoURL } alt={user.displayName} className="rounded-circle me-2" style={{ height: '40px', width: '40px' }} />
                   <div className="me-3">{user.displayName || user.email}</div>
                   <button className="btn btn-primary" onClick={handleSignOut}>Sign out</button>
                 </div>

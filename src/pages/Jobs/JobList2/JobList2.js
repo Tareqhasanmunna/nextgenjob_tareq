@@ -8,7 +8,7 @@ import JobVacancyPost2 from "./JobVacancyPost2";
 import Pagination from "../JobList2/Pagination";
 
 const JobList2 = () => {
-  document.title = "Job List2 | NextGenJob - Job Listing Template | Code Canva Team";
+  document.title = "Job List2 | NextGenJob - Code Canva Team | NextGenJob";
   return (
     <React.Fragment>
       <Section />

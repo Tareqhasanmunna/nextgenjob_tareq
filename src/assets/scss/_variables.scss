@@ -69,6 +69,7 @@ $grays: (
 // scss-docs-start color-variables
 $blue: #1f86ef;
 $indigo: #564ab1;
+$purple: #766df4;
 $pink: #e83e8c;
 $red: #da3746;
 $orange: #f1734f;
@@ -83,6 +84,7 @@ $cyan: #5fd0f3;
 $colors: (
   "blue": $blue,
   "indigo": $indigo,
+  "purple": $purple,
   "pink": $pink,
   "red": $red,
   "orange": $orange,
@@ -99,7 +101,7 @@ $colors: (
 // scss-docs-end colors-map
 // scss-docs-start theme-color-variables
 $primary: $green;
-$secondary:lighten($green, 10%) ;
+$secondary: $gray-600;
 $success: $green-dark;
 $info: $cyan;
 $warning: $yellow;
@@ -129,8 +131,7 @@ $theme-colors: (
 );
 
 // scss-docs-end theme-colors-map
-$green-light: lighten($green, 10%);
-$green-dark: darken($green, 10%);
+
 // scss-docs-start theme-colors-rgb
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 // scss-docs-end theme-colors-rgb
@@ -378,7 +379,7 @@ $dark-text: $gray-700;
 $purple-text: $purple-600;
 $blue-text: $blue-600;
 
-$primary-bg-subtle: $green-100;
+$primary-bg-subtle: $purple-100;
 $secondary-bg-subtle: $gray-100;
 $success-bg-subtle: $green-100;
 $info-bg-subtle: $cyan-100;

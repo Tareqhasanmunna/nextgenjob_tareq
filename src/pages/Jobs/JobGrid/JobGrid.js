@@ -8,7 +8,7 @@ import Selected from "./Selected";
 import Pagination from "../JobList2/Pagination";
 
 const JobGrid = () => {
-  document.title = "Job Grid | NextGenJob - Job Listing Template | Code Canva Team";
+  document.title = "Job Grid | NextGenJob - Code Canva Team | NextGenJob";
   return (
     <React.Fragment>
       <Section />

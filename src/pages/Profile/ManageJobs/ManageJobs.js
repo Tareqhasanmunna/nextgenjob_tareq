@@ -5,7 +5,7 @@ import Section from "./Section";
 import Selected from "./Selected";
 
 const ManageJobs = () => {
-  document.title = "Manage Jobs | NextGenJob - Job Listing Template | Code Canva Team";
+  document.title = "Manage Jobs | NextGenJob - Code Canva Team | NextGenJob";
   return (
     <React.Fragment>
       <Section />

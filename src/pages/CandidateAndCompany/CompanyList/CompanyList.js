@@ -4,7 +4,7 @@ import CompanyDetails from "./CompanyDetails";
 import Section from "./Section";
 
 const CompanyList = () => {
-  document.title = "Company List | NextGenJob - Job Listing Template | Code Canva Team";
+  document.title = "Company List | NextGenJob - Code Canva Team | NextGenJob";
   return (
     <React.Fragment>
       <Section />

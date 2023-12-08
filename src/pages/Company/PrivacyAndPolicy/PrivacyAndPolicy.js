@@ -4,7 +4,7 @@ import PrivacyAndPolicyPage from "../../Company/PrivacyAndPolicy/PrivacyAndPolic
 
 const PrivacyAndPolicy = () => {
   document.title =
-    "Privacy & Policy | NextGenJob - Job Listing Template | Code Canva Team";
+    "Privacy & Policy | NextGenJob - Code Canva Team | NextGenJob";
   return (
     <React.Fragment>
       <Section />

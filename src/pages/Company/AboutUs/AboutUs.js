@@ -3,12 +3,11 @@ import About from "../../../pages/Company/AboutUs/About";
 import Section from "../../../pages/Company/AboutUs/Section";
 import Counter from "../../../pages/Company/AboutUs/Counter";
 import Features from "../../../pages/Company/AboutUs/Features";
-import Cta from "../../../pages/Company/AboutUs/Cta";
 import Faqs from "../Faqs/Faqs";
 import Team from "../Team/Team";
 
 const AboutUs = () => {
-  document.title = "About Us | NextGenJob - Job Listing Template | Code Canva Team";
+  document.title = "About Us | NextGenJob - Code Canva Team | NextGenJob";
   return (
     <React.Fragment>
       <Section />
@@ -16,7 +15,6 @@ const AboutUs = () => {
       <Counter />
       <Features />
       <Team/>
-      <Cta />
       <Faqs/>
     </React.Fragment>
   );

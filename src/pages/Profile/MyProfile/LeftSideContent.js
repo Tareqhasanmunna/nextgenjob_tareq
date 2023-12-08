@@ -1,24 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Card, CardBody, Col } from "reactstrap";
 
 //Import images
 import profileImage from "../../../assets/images/profile.jpg";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
 
 const LeftSideContent = () => {
+
+  const navigate = useNavigate();
+  const [user]  = useAuthState(auth);
+
   return (
     <React.Fragment>
+      
       <Col lg={4}>
         <Card className="profile-sidebar me-lg-4">
           <CardBody className="p-4">
             <div className="text-center pb-4 border-bottom">
               <img
-                src={profileImage}
+                src={user.photoURL}
                 alt=""
                 className="avatar-lg img-thumbnail rounded-circle mb-4"
               />
-              <h5 className="mb-0">Jennifer Dickens</h5>
-              <p className="text-muted">Developer</p>
+              <h5 className="mb-0">{user.displayName} </h5>
+              <p className="text-muted">{user.email}</p>
               <ul className="list-inline d-flex justify-content-center align-items-center ">
                 <li className="list-inline-item text-warning fs-19">
                   <i className="mdi mdi-star"></i>

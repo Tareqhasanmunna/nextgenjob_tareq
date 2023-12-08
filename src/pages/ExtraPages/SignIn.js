@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardBody, Col, Container, Row} from "reactstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
@@ -14,17 +14,31 @@ const SignIn = () => {
   const [signInWithGoogle, userG, loadingG, errorG] = useSignInWithGoogle(auth);
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
-
+  const [selectedRole, setSelectedRole] = useState('hr');
+  
+  
+  
+  
   // Function to handle form submission
   const onSubmit = async (data) => {
     try {
-      await signInWithEmailAndPassword(data.email, data.password);
-      alert("Using logging in");
-      console.log(data);
+      if (selectedRole === 'hr') {
+        // Logic for HR sign-in
+        await signInWithEmailAndPassword(data.email, data.password);
+        // Redirect to HR dashboard after successful login
+        navigate('/hr-dashboard');
+      } else {
+        // Logic for Applicant sign-in
+        await signInWithEmailAndPassword(data.email, data.password);
+        // Redirect to Applicant dashboard after successful login
+        navigate('/applicant-dashboard');
+      }
     } catch (error) {
       alert("SignIn Error:", error);
     }
   };
+
+  
 
   // Redirect to profile if the user is signed in
   if (user || userG) {
@@ -39,7 +53,6 @@ const SignIn = () => {
 
   if (loading || loadingG) {
     return <p>Loading...</p>;
-    console.log(loading||loadingG);
   }
 
   return (
@@ -82,6 +95,46 @@ const SignIn = () => {
                                 <label htmlFor="passwordInput" className="form-label">Password</label>
                                 <input {...register("password", { required: true })} name="password" type="password" className="form-control" id="passwordInput" placeholder="Enter your password" />
                               </div>
+                              
+
+                              <div className="mb-4">
+          {/* Radio buttons for role selection */}
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="radio"
+              id="hrRole"
+              value="hr"
+              checked={selectedRole === 'hr'}
+              onChange={() => setSelectedRole('hr')}
+            />
+            <label className="form-check-label" htmlFor="hrRole">
+              HR/CEO
+            </label>
+          </div>
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="radio"
+              id="applicantRole"
+              value="applicant"
+              checked={selectedRole === 'applicant'}
+              onChange={() => setSelectedRole('applicant')}
+            />
+            <label className="form-check-label" htmlFor="applicantRole">
+              Applicant
+            </label>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
                               <div className="mb-4">
                                 <div className="form-check">
                                   <input className="form-check-input" type="checkbox" id="flexCheckDefault" />
