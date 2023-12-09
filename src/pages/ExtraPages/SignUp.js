@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Container, Card, Col, Row, CardBody } from "reactstrap";
 import lightLogo from "../../assets/images/Nextgenjob.png";
@@ -20,6 +20,7 @@ let signinErrors;
 const onSubmit = async (data)=>{
   try{
     await createUserWithEmailAndPassword(data.email,data.password);
+
     alert("New User Signup on website");
     naviagate('/myprofile');
     console.log(data);
@@ -28,7 +29,6 @@ const onSubmit = async (data)=>{
 console.error(error);
   }
 }
-
 
 if(userGoogle || user){
  alert("User Already Sign in ");
@@ -161,9 +161,10 @@ document.title = "Sign Up | Next Gen Job - Job Listing  | Team Canva";
                                 </div>
                               </form>
                               <div className="mt-3 text-center">
-                              <button onClick={() => signInWithGoogle()} className="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-lg text-slate-700 hover:border-slate-100 hover:text-slate-900 hover:shadow transition duration-150">
+                          <button onClick={() => signInWithGoogle()}  className="w-full text-center py-3 my-3 border flex space-x-2 items-center justify-center border-slate-200 rounded-lg text-slate-700 hover:border-slate-100 hover:text-slate-900 hover:shadow transition duration-150">
                               <span>Sign up with </span>  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" className="img-fluid w-25" alt="ae" /> 
                     </button>
+
                                 <p className="mb-0">
                                   Already a member ?{" "}
                                   <Link

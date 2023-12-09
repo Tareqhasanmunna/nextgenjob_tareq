@@ -43,6 +43,7 @@ import BookMarkJobPost from "../pages/Profile/BookMarkJobPost/BookMarkJobPost";
 import ManageJobs from "../pages/Profile/ManageJobs/ManageJobs";
 import BookMarkJobs from "../pages/Profile/BookMarkJobs/BookMarkJobs";
 import MyProfile from "../pages/Profile/MyProfile/MyProfile";
+import Settings from "../pages/Profile/MyProfile/Settings";
 
 //Home Section
 const Layout2 = React.lazy(() => import('../pages/Home/Layout2/Layout2'));
@@ -50,7 +51,9 @@ const Layout2 = React.lazy(() => import('../pages/Home/Layout2/Layout2'));
 const userRoutes = [
   //profile Section(User Profile)
   { path: "/bookmarkjobpost", component: <BookMarkJobPost /> },
+  
   { path: "/myprofile", component: <MyProfile /> },
+  { path: "/myprofile/settings", component: <Settings /> },
   { path: "/bookmarkjobs", component: <BookMarkJobs /> },
   { path: "/managejobs", component: <ManageJobs /> },
 

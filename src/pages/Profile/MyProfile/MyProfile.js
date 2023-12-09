@@ -13,7 +13,7 @@ const MyProfile = () => {
   return (
     <React.Fragment>
      <section>
-     <section className="page-title-box">
+     <section className="">
         <Container>
           <Row className="justify-content-center">
             <div md={6} className="col-md-6">

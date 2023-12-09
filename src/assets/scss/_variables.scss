@@ -1276,56 +1276,56 @@ $navbar-dark-brand-hover-color: $navbar-dark-active-color;
 // Dropdown menu container and contents.
 
 // scss-docs-start dropdown-variables
-$dropdown-min-width: 12rem;
-$dropdown-padding-x: 0.75rem;
-$dropdown-padding-y: 0.75rem;
-$dropdown-spacer: 0.125rem;
-$dropdown-font-size: $font-size-base;
-$dropdown-color: var(--#{$prefix}secondary-color);
-$dropdown-bg: var(--#{$prefix}secondary-bg);
-$dropdown-border-color: var(--#{$prefix}border-color);
-$dropdown-border-radius: $border-radius;
-$dropdown-border-width: var(--#{$prefix}border-width);
-$dropdown-inner-border-radius: calc(
-  $dropdown-border-radius - $dropdown-border-width
-); // stylelint-disable-line function-disallowed-list
-$dropdown-divider-bg: $dropdown-border-color;
-$dropdown-divider-margin-y: $spacer * 0.5;
-$dropdown-box-shadow: $box-shadow;
+$custom-dropdown-min-width: 12rem;
+$custom-dropdown-padding-x: 0.75rem;
+$custom-dropdown-padding-y: 0.75rem;
+$custom-dropdown-spacer: 0.125rem;
+$custom-dropdown-font-size: $font-size-base;
+$custom-dropdown-color: var(--#{$prefix}secondary-color);
+$custom-dropdown-bg: var(--#{$prefix}secondary-bg);
+$custom-dropdown-border-color: var(--#{$prefix}border-color);
+$custom-dropdown-border-radius: $border-radius;
+$custom-dropdown-border-width: var(--#{$prefix}border-width);
+$custom-dropdown-inner-border-radius: calc(
+  $custom-dropdown-border-radius - $dropdown-border-width
+)s; // stylelint-disable-line function-disallowed-list
+$custom-dropdown-divider-bg: $dropdown-border-color;
+$custom-dropdown-divider-margin-y: $spacer * 0.5;
+$custom-dropdown-box-shadow: $box-shadow;
 
-$dropdown-link-color: var(--#{$prefix}body-color);
-$dropdown-link-hover-color: $dropdown-link-color;
-$dropdown-link-hover-bg: var(--#{$prefix}tertiary-bg);
+$custom-dropdown-link-color: var(--#{$prefix}body-color);
+$custom-dropdown-link-hover-color: $dropdown-link-color;
+$custom-dropdown-link-hover-bg: var(--#{$prefix}tertiary-bg);
 
-$dropdown-link-active-color: $component-active-color;
-$dropdown-link-active-bg: $component-active-bg;
+$custom-dropdown-link-active-color: $component-active-color;
+$custom-dropdown-link-active-bg: $component-active-bg;
 
-$dropdown-link-disabled-color: $gray-600;
+$custom-dropdown-link-disabled-color: $gray-600;
 
-$dropdown-item-padding-y: 0.625rem;
-$dropdown-item-padding-x: 0.625rem;
+$custom-dropdown-item-padding-y: 0.625rem;
+$custom-dropdown-item-padding-x: 0.625rem;
 
-$dropdown-header-color: $gray-600;
-$dropdown-header-padding-x: $dropdown-item-padding-x;
-$dropdown-header-padding-y: $dropdown-padding-y;
+$custom-dropdown-header-color: $gray-600;
+$custom-dropdown-header-padding-x: $dropdown-item-padding-x;
+$custom-dropdown-header-padding-y: $dropdown-padding-y;
 // fusv-disable
-$dropdown-header-padding: $dropdown-header-padding-y $dropdown-header-padding-x; // Deprecated in v5.2.0
+$custom-dropdown-header-padding: $custom-dropdown-header-padding-y $custom-dropdown-header-padding-x; // Deprecated in v5.2.0
 // fusv-enable
 // scss-docs-end dropdown-variables
 
 // scss-docs-start dropdown-dark-variables
-$dropdown-dark-color: $gray-300;
-$dropdown-dark-bg: $gray-700;
-$dropdown-dark-border-color: $dropdown-border-color;
-$dropdown-dark-divider-bg: $dropdown-divider-bg;
-$dropdown-dark-box-shadow: null;
-$dropdown-dark-link-color: $dropdown-dark-color;
-$dropdown-dark-link-hover-color: $white;
-$dropdown-dark-link-hover-bg: rgba($white, 0.15);
-$dropdown-dark-link-active-color: $dropdown-link-active-color;
-$dropdown-dark-link-active-bg: $dropdown-link-active-bg;
-$dropdown-dark-link-disabled-color: $gray-300;
-$dropdown-dark-header-color: $gray-500;
+$custom-dropdown-dark-color: $gray-300;
+$custom-dropdown-dark-bg: $gray-700;
+$custom-dropdown-dark-border-color: $custom-dropdown-border-color;
+$custom-dropdown-dark-divider-bg: $custom-dropdown-divider-bg;
+$custom-dropdown-dark-box-shadow: null;
+$custom-dropdown-dark-link-color: $custom-dropdown-dark-color;
+$custom-dropdown-dark-link-hover-color: $white;
+$custom-dropdown-dark-link-hover-bg: rgba($white, 0.15);
+$custom-dropdown-dark-link-active-color: $custom-dropdown-link-active-color;
+$custom-dropdown-dark-link-active-bg: $custom-dropdown-link-active-bg;
+$custom-dropdown-dark-link-disabled-color: $gray-300;
+$custom-dropdown-dark-header-color: $gray-500;
 // scss-docs-end dropdown-dark-variables
 
 // Pagination
